@@ -6,9 +6,9 @@ ref: https://yew.rs/ja/getting-started/build-a-sample-app
 
 ```
 # build app
-wasm-pack build --target web --out-name wasm --out-dir ./static
+wasm-pack build --target web --out-name wasm --out-dir ./pkg
 
 # serve app (with miniserve)
 cargo install miniserve
-miniserve ./static --index index.html
+miniserve . --index index.html
 ```
